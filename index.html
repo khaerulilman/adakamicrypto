@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <title>Adakami Crypto</title>
+</head>
+
+<body class="bg-gray-100 ">
+
+    <div class="bg-gray-800 text-white flex justify-between items-center p-4">
+        <div class="flex items-center">
+            <img src="images-removebg-preview.png" class="h-10 w-10">
+            <span class="ml-2 text-xl font-bold">Adakami Crypto</span>
+        </div>
+
+
+        <div class="hidden md:flex">
+            <a href="#" class="text-lg hover:text-red-500 transition duration-300 mr-4">Home</a>
+            <a href="#" class="text-lg hover:text-red-500 transition duration-300 mr-4">About</a>
+            <a href="#" class="text-lg hover:text-red-500 transition duration-300">Contact Us</a>
+        </div>
+
+
+        <div class="md:hidden">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center justify-between p-6 bg-gray-800 text-white">
+        <div class="md:w-1/2">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Welcome to Adakami Crypto</h1>
+            <p class="mb-6">Kalian akan mendapatkan akses ke calls ekslusif hitrate tertinggi di Indonesia dan berita
+                market A1 yang tidak akan kalian dapatkan ditempat lain</p>
+            <a href="#" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition duration-300">Get
+                Started</a>
+        </div>
+        <div class="md:w-1/2 mt-6 md:mt-0">
+            <img src="community.webp" class="w-full h-auto rounded-lg" />
+        </div>
+    </div>
+
+
+    <div class="container mx-auto py-12 px-4">
+        <h2 class="text-4xl font-bold text-center mb-10">Course Kami</h2>
+
+
+        <div class="flex flex-col md:flex-row items-center mb-10">
+
+            <div class="md:w-1/2 mb-4 md:mb-0">
+                <img src="Frame-654037334-2.webp" class="w-full h-auto object-cover">
+            </div>
+
+            <div class="md:w-1/2 md:pl-10 text-center md:text-left">
+                <h3 class="text-2xl font-semibold mb-4">Course 1: Crypto Investing</h3>
+                <p class="text-lg">Di modul ini kalian akan gua pandu pribadi step by step dari Mindset berinvestasi di
+                    crypto, cara melihat siklus pasar untuk tau kapan masuk dan keluar, menganalisa tipe-tipe
+                    cryptocurrency, cara melihat attention economy didalam crypto, cara meriset crypto dan menghitung
+                    harga wajarnya,
+                </p>
+            </div>
+        </div>
+
+
+        <div class="flex flex-col md:flex-row-reverse items-center mb-10">
+
+            <div class="md:w-1/2 mb-4 md:mb-0">
+                <img src="Frame-654037337.webp" class="w-full h-auto object-cover">
+            </div>
+
+            <div class="md:w-1/2 md:pr-10 text-center md:text-right">
+                <h3 class="text-2xl font-semibold mb-4">Course 2: Bitcoin: Transaction in Depth</h3>
+                <p class="text-lg">Di modul ini kita akan mempelajari transaksi bitcoin secara dalam seperti cara kerja
+                    base58check encoding, Bitcoin scripting, Pay to Adress (P2A), Pay to public key (P2PK), Hash locked
+                    transaction (HLT), Check lock time verify (CLTV), dan praktek langsung dengan IDE. </p>
+            </div>
+        </div>
+
+
+        <div class="flex flex-col md:flex-row items-center">
+
+            <div class="md:w-1/2 mb-4 md:mb-0">
+                <img src="Frame-654037343.webp" class="w-full h-auto object-cover">
+            </div>
+
+            <div class="md:w-1/2 md:pl-10 text-center md:text-left">
+                <h3 class="text-2xl font-semibold mb-4">Course 3: Smart Contract Security</h3>
+                <p class="text-lg">Di modul ini kalian akan belajar secara advanced tentang smart contract security,
+                    modul ini dibuat untuk kalian yang mau bekerja dibidang auditor smart contract. Kalian akan belajar
+                    dari cara menjadi auditor security dari pengalaman dan resikonya, proses auditing security, tools
+                    dan techniques yang digunakan, sampai praktik cara mencari angka tersembunyi dari sebuah smart
+                    contract.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-10">Apa Kata Mereka</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <div class="bg-white shadow-lg p-6 rounded-lg">
+                    <img src="images (3).jpg" class="w-24 h-24 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-center">Sule</h3>
+                    <p class="text-gray-700 text-center mt-2">"Ikut kelas crypto ini sangat mengubah pandangan saya
+                        tentang investasi. Dulu saya ragu, tetapi sekarang saya merasa lebih percaya diri untuk
+                        berinvestasi dan memahami pasar crypto dengan baik. Materi yang disampaikan sangat jelas dan
+                        mudah dipahami. Terima kasih, Adakami Crypto!"</p>
+                </div>
+
+
+                <div class="bg-white shadow-lg p-6 rounded-lg">
+                    <img src="images (4).jpg" class="w-24 h-24 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-center">Dede Inoen</h3>
+                    <p class="text-gray-700 text-center mt-2">"Kelas crypto Adakami benar-benar memberikan wawasan baru
+                        bagi saya. Instruktur yang berpengalaman dan materi yang komprehensif membuat belajar menjadi
+                        menyenangkan. Saya sekarang bisa menganalisis tren pasar dengan lebih baik dan mengambil
+                        keputusan investasi yang lebih cerdas."</p>
+                </div>
+
+                <div class="bg-white shadow-lg p-6 rounded-lg">
+                    <img src="images (5).jpg" class="w-24 h-24 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-center">Komeng</h3>
+                    <p class="text-gray-700 text-center mt-2">"Saya baru mulai belajar tentang crypto, dan kelas ini
+                        sangat membantu! Penjelasannya sangat rinci dan praktis. Saya bisa langsung menerapkan apa yang
+                        saya pelajari dan melihat hasilnya dalam investasi saya. Highly recommended!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-xl font-bold">About Us</h3>
+                <p class="text-gray-400 mt-2 max-w-md">
+                    Di Adakami Crypto, kami berkomitmen untuk memberikan edukasi dan informasi terpercaya tentang
+                    cryptocurrency. Misi kami adalah membantu Anda memahami dan berinvestasi dengan cerdas di dunia
+                    crypto. Bergabunglah dengan kami dan tingkatkan pengetahuan Anda bersama komunitas yang mendukung!
+                </p>
+            </div>
+
+
+            <div class="flex flex-col md:flex-row items-center">
+                <h3 class="text-xl font-bold mb-4 md:mb-0 md:mr-4">Follow Us</h3>
+                <div class="flex space-x-6">
+                    <a href="https://www.youtube.com">
+                        <img src="png-transparent-youtube-logo-youtube-logo-computer-icons-subscribe-angle-rectangle-airplane-removebg-preview.png"
+                            class="w-8 h-8 transition duration-300 hover:opacity-75">
+                    </a>
+                    <a href="https://www.x.com">
+                        <img src="images__1_-removebg-preview.png"
+                            class="w-8 h-8 transition duration-300 hover:opacity-75">
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <img src="images__6_-removebg-preview.png"
+                            class="w-8 h-8 transition duration-300 hover:opacity-75">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-400 mt-4">
+            &copy; 2024 Ilman. All rights reserved.
+        </div>
+    </div>
+
+
+    <div id="mobile-menu" class="fixed inset-0 bg-gray-900 bg-opacity-75 z-50 hidden">
+        <div class="flex items-center justify-end p-4">
+            <button id="menu-close" class="text-white">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <nav class="flex flex-col items-center mt-10 space-y-4">
+            <a href="#" class="text-white text-lg">Home</a>
+            <a href="#" class="text-white text-lg">About</a>
+            <a href="#" class="text-white text-lg">Contact Us</a>
+        </nav>
+    </div>
+
+    <script>
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuClose = document.getElementById('menu-close');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        menuClose.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    </script>
+</body>
+
+</html>
